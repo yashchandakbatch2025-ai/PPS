@@ -1,0 +1,17 @@
+9.1.1. Count Vowels in a String - 1
+code :
+text = input()
+vowels = "aeiouAEIOU"
+count = 0
+for char in text:
+	if char in vowels:
+		count += 1
+print(count)
+
+9.1.2. Palindrome or Not
+code :
+s = input()
+if s == s[::-1]:
+	print("Palindrome")
+else:
+	print("Not a Palindrome")
