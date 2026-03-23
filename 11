@@ -1,0 +1,22 @@
+11.1.1. Sum of Digits of a Number
+num = int(input("Enter a number: "))
+temp = num  
+digit_sum = 0
+while temp > 0:
+	digit = temp % 10
+	digit_sum += digit
+	temp //= 10
+print("Sum of digits:",digit_sum)
+
+11.1.2. Sum of Digits using Recursion
+def sum_of_digits_recursive(n):
+	if n == 0:
+		return 0
+	else:
+		return (n % 10) + sum_of_digits_recursive(n // 10)
+
+number = int(input())
+result = sum_of_digits_recursive(abs(number))
+print(result)
+
+ 
